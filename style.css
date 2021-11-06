@@ -16,7 +16,7 @@
     background-image: url(/images/desktop/image-header.jpg);
 }
 
-.ul-nav li a{
+.ul-nav li a :hover{
     color: white;
 }
 
@@ -32,6 +32,7 @@
     background-color: cadetblue;
     border-radius: 20px;
 }
+
 
 .hero{
     background-image: url(/images/desktop/image-header.jpg);
@@ -101,7 +102,6 @@
     
 }
 .crd1{
-    
     width: 100%;
     height: 100%;
 }
@@ -113,6 +113,10 @@
 
 .foot{
     background-color: hsl(168, 34%, 41%);
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+    
 }
 
 .di-ul{
@@ -128,13 +132,17 @@
     padding-right: 10px;
     font-size: large;
 }
+.di-ul li :hover{
+    color: blanchedalmond;
+    animation: scale ease 1s;
+}
 
 .logo img{
     color: hsl(198, 62%, 26%);
-    position: relative;
-    padding: 10px;
+    /* position: relative;
+    padding: 10px; */
     font-size: 100px;
-    margin-left: 610px;
+    /* margin-left: 610px; */
 }
 
 .social{
@@ -143,6 +151,23 @@
 }
 .mobile{
     display: none;
+}
+body{
+    animation: fadeIn ease 1s;
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes scale {
+    to{
+        transform: scale(1.2);
+    }
 }
 
 
